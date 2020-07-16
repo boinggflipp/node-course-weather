@@ -10,7 +10,10 @@ callback("Unable to connect to Weather Service.")
     callback(body.error.info)
 }
 else{
-callback(undefined, body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degrees out. It feels like " +body.current.feelslike+ " degrees doe.")
+
+
+    
+callback(undefined, body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degrees out. It feels like " +body.current.feelslike+ " degrees doe. Humidity is " + body.current.humidity + "%.")
 }
 })
 
